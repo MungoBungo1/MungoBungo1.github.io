@@ -12,12 +12,12 @@ body {
 }
 
 p {
-    color: orange;
+    color: rgb(245, 240, 232);
     font-size: 24px;
 }
 
 th {
-    color: orange;
+    color: lightblue;
     font-size: 32px;
 }
 
@@ -47,8 +47,10 @@ summary {
 }
 
 .inner-container {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
     padding: 2%;
 }
 
@@ -64,12 +66,13 @@ summary {
 }
 
 .tile-image {
-    display: block;
     margin-left: auto;
-    width: auto;
+    width: 200px;
     height: auto;
+    flex-shrink: 0
 }
 
 .tile-p {
-
+    color: rgb(245, 240, 232);;
+    font-size: 24px;
 }
